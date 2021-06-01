@@ -1,4 +1,86 @@
-h1 
+
+/* Eléments principaux de la page */
+
+@font-face 
 {
-    color: red;
+    
+        font-family: 'raleway', "sans-serif";
+        src: url("Projet_Reservia/police/Raleway-regular.ttf");
+        src: url("Projet_ Reservia/police/Raleway-ExtraBold.ttf");
+        font-style: normal;
+        font-weight: normal;
+}
+
+#bloc_page
+{  
+    font-family: 'Raleway', Arial, sans-serif;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 30px;
+}
+
+nav a
+{
+    font-size: 0.9em;
+    color: #0065FC;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #080808;
+}
+
+/* Titres */
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+h1
+{
+    
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+h2
+{
+    
+    font-size: 0.9em;
+    margin-top: 0px;
+    font-weight: normal;
 }
