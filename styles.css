@@ -90,7 +90,7 @@ h2
 #barre_recherche
 {
    display: flex;
-   max-width: 520px;
+   max-width: 500px;
    height: 50px;
    align-items: center;
     
@@ -167,3 +167,90 @@ input[type=button]
 
 }
 
+/*Onglets filtre*/
+
+#filtre
+{
+    margin-top: 30px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bolder;
+     
+}
+
+#filtre :hover /* animation des filtres lors du passage du curseur */
+{
+    background-color: #DEEBFF;  
+    
+} 
+
+
+/*conteneurs des sections + texte*/
+
+.money, .child, .heart, .dog 
+
+{
+    display: flex;
+    margin-left: 25px;
+    border-radius: 40px;
+    height: 46px;
+    border: #d9d9d9 2px solid;
+    border-left: none;
+    align-items: center;
+     
+}
+
+.money p, .child p, .heart p, .dog p /*centrer uniquement le texte*/
+  {
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+  .money
+  {
+     width: 195px;
+  }
+  
+  .child
+  {
+     width: 150px;
+  }  
+
+  .heart
+  {
+     width: 180px;
+  }  
+
+  .dog
+  {
+     width: 240px;
+  }  
+
+
+
+
+
+.section /*conteneur du fond bleu + icônes */
+{ 
+    
+    display: flex;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #DEEBFF;
+    align-items: center;
+    justify-content: center;  
+    
+}
+
+#icon
+{
+    
+    width: 40%;
+	height: 40%;
+    
+}
+
+    
