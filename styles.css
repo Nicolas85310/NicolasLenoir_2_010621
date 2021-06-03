@@ -14,7 +14,7 @@
 #bloc_page
 {  
     font-family: 'Raleway', Arial, sans-serif;
-    max-width: 1400px;
+    max-width: 1340px;
     margin: auto;
 }
 
@@ -84,3 +84,86 @@ h2
     margin-top: 0px;
     font-weight: normal;
 }
+
+/*barre de recherche*/
+
+#barre_recherche
+{
+   display: flex;
+   max-width: 520px;
+   height: 50px;
+   align-items: center;
+    
+}
+
+.map
+{
+    display: flex;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f2f2;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon_map
+{
+    display: flex;
+    max-width: 12px;
+    max-height: 18px;
+    
+}
+
+.saisie
+{
+    display: flex;  
+}
+
+
+
+input[type=text]
+{
+   
+    display: flex;
+    min-width: 234px;
+    height: 46px;
+    padding-left: 15px;
+    border-top: #f2f2f2 1px solid;
+    border-bottom: #f2f2f2 1px solid;
+    border-left: none;
+    border-right: none;
+}
+
+::placeholder
+
+{
+    color: black;
+    font-weight: bold;
+}
+
+.valide
+{
+    display: flex;  
+}
+
+.valide :hover
+{
+    background-color: #DEEBFF;  
+    color: black;
+}    
+
+input[type=button] 
+{
+    display: flex;
+    min-width: 134px;
+    height: 50px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #0065FC;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
