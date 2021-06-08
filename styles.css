@@ -309,22 +309,30 @@ color:  #0065FC;
     border-radius: 20px;
     background-color: #f2f2f2;
     flex-wrap: wrap;
-    
-    
-
 
 }   
 
-.section_heb h1, .section_pop h1, .afficher_plus /* titre h1 */
+.section_heb h2, .afficher_plus /* titre h2 */
 {
 font-size: 1.4em;
+font-weight: bold;
 margin-left: 40px;
 padding-bottom: 10px;
+padding-top: 40px;
 width: 100%;
 
 
 }
 
+.section_pop h2 /* titre h2 */
+{
+font-size: 1.4em;
+font-weight: bold;
+margin-left: 40px;
+margin-bottom: 5px;
+padding-top: 40px;
+width: 100%;
+}
 .article /* conteneur photo, descriptif et classement */
 {
     display: flex;
