@@ -177,7 +177,7 @@ i
 color:  #0065FC;   
 }
 
-#filtre
+.filtre
 {
     margin-top: 30px;
     display: flex;
@@ -189,7 +189,7 @@ color:  #0065FC;
      
 }
 
-#filtre :hover /* animation des filtres lors du passage du curseur */
+.filtre :hover /* animation des filtres lors du passage du curseur */
 {
     background-color: #DEEBFF;  
     
@@ -595,3 +595,78 @@ footer ul
     
 }
 
+
+                                     /*RESPONSIVE DESIGN */
+
+
+/* Pour les résolutions comprises entre 320px et 480 px Smartphone) */
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+    nav {
+        position: relative;
+    }
+    
+    .inscrire {
+        position: absolute;
+        right: 0px;
+        top: -40px;
+        font-weight: bold;
+    }
+    
+    input[type="button"] {
+        min-width: 50px;
+        height: 50px;
+        font-size: 0px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+       
+    }
+    
+    .valide {
+        position: relative;
+        width: 50px;
+    }
+    
+    .valide .fas {
+        position: absolute;
+        font-size: 100%;
+        color: white;
+        right: 20px;
+        top: 15px;
+    }
+
+    #titre_filtre
+
+    {
+        position: absolute;
+        top: 350px;
+    
+    }
+
+    .filtre {
+        margin-top : 70px;
+        margin-left: auto;
+    }
+
+    .money, .child, .heart, .dog 
+
+{
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+    
+    .article, .article_act {
+        width: 335px;
+        height:190px;
+    }
+    
+    .img {
+        height: 135px;
+    }
+    
+    .blockf h2, .footer ul {
+        padding-left: 20px;
+    }
+}

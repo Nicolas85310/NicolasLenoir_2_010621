@@ -1,0 +1,52 @@
+nav {
+    position: relative;
+}
+
+.inscrire {
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    font-weight: bold;
+}
+
+input[type="button"] {
+    width: 50px;
+    font-size: 0px;
+}
+
+.Rechercher {
+    position: relative;
+}
+
+.Rechercher .fas {
+    position: absolute;
+    font-size: 100%;
+    color: white;
+    right: 20px;
+    top: 15px;
+}
+
+.money {
+    width: 175px;
+}
+
+.child {
+    width: 140px;
+}
+
+.section_heb {
+    width: 325px;
+}
+
+.article_act {
+    width: 335px;
+    height:190px;
+}
+
+.img {
+    height: 135px;
+}
+
+.blockf h2, .footer ul {
+    padding-left: 20px;
+}
