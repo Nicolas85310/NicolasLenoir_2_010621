@@ -195,10 +195,7 @@ color:  #0065FC;
     
 } 
 
-/*#titre_filtre
-{
-    width: 100%;
-}*/
+
 
 
 /*conteneurs des sections + texte*/
@@ -309,22 +306,30 @@ color:  #0065FC;
     border-radius: 20px;
     background-color: #f2f2f2;
     flex-wrap: wrap;
-    
-    
-
 
 }   
 
-.section_heb h1, .section_pop h1, .afficher_plus /* titre h1 */
+.section_heb h2, .afficher_plus /* titre h2 */
 {
 font-size: 1.4em;
+font-weight: bold;
 margin-left: 40px;
 padding-bottom: 10px;
+padding-top: 40px;
 width: 100%;
 
 
 }
 
+.section_pop h2 /* titre h2 */
+{
+font-size: 1.4em;
+font-weight: bold;
+margin-left: 40px;
+margin-bottom: 5px;
+padding-top: 40px;
+width: 100%;
+}
 .article /* conteneur photo, descriptif et classement */
 {
     display: flex;
@@ -364,9 +369,10 @@ width: 100%;
 }
 
 .photo img
-{
+{   
+    object-fit: cover;
     width: 100%;
-    height: 110px;
+    height: 100%;
     border-radius: 15px 15px 0 0;   
 }
 
@@ -458,3 +464,134 @@ font-weight: bold;
     height: auto;
     border-radius: 15px 0 0 15px;   
 }
+
+
+
+.block_act /* block activités */
+
+{   
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 40px 0 0;
+    min-height: 445px;
+    background-color: white;
+    
+
+}  
+
+.block_act h2 /* titre h2 */
+{
+font-size: 1.4em;
+font-weight: bold;
+margin-top: 20px;
+padding-bottom: 10px;
+width: 100%;
+
+
+}
+
+.article_act /* conteneur photo et descriptif */
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-right: 43px;
+    width: 300px;
+    height: 445px;
+    border-radius: 20px;
+    margin: -5px 0px 0px 0px; 
+    box-shadow: 0px 3px 25px #f2f2f2;
+   
+}
+
+img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0; 
+    overflow: hidden;  
+}
+
+.titre_act 
+{   
+    height: 55px;    
+}
+
+.titre_act h3
+{
+    margin: 20px;   
+}
+
+.article_act[href="#Fort_de_Pomègues"] 
+{
+    
+    height: 235px;
+}
+
+.article_act[href="#Îles_du_Frioul"] 
+{   
+    
+    height: 163px;
+}
+
+.article_act[href="#Notre_Dame_de_la_Garde"] 
+{   
+    
+    height: 195px;
+}
+
+.article_act[href="#Parc_Longchamp"] 
+{   
+    
+    height: 210px;
+}
+
+/*Mise en colonne des petits articles*/
+
+.Pomègues_Frioul, .Dame_Longchamps
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+ 
+}
+
+/* footer */
+
+footer {
+    background-color: #f2f2f2;
+    margin-top: 55px;
+}
+
+.blockf {
+    max-width: 1380px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blockf h2{
+    margin-left: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+}    
+
+.colonne1, .colonne2, .colonne3 
+{
+    width: 33%;
+    padding-top: 50px;
+
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding-left: 50px;
+    line-height: 2em;
+    
+}
+
