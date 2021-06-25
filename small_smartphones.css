@@ -1,5 +1,5 @@
 
-/* Pour les résolutions comprises entre 320px et 480 px Smartphone) */
+/* Pour les résolutions inférieures à 380px Small_Smartphone) */
 
 
 .block_heb_pop
@@ -18,7 +18,7 @@
 .info
 {
     margin-bottom: 35px ;
-    
+    max-width: 90%;
 }
 
 
@@ -26,7 +26,7 @@ nav {
     position: relative;
 }
 
-.titre_principal, .barre_recherche
+.titre_principal
 {
     padding-left: 15px;
     max-width: 320px;  
@@ -34,7 +34,11 @@ nav {
 
 .barre_recherche
 {
+    padding-left: 15px;
     margin-top: 30px;
+    width: 200px; 
+    
+ 
 }
 
 .map
@@ -42,7 +46,18 @@ nav {
     
     border-radius: 15px 0 0 15px;
 }
+.saisie
+{
+    max-width: 210px;  
+}
 
+input[type=text]
+{
+   
+    
+    min-width: 224px;
+   
+}
 input[type="button"] {
     min-width: 50px;
     height: 50px;
@@ -58,6 +73,7 @@ input[type="button"] {
     width: 50px;
     border-radius: 15px;
     margin-left: -5px;
+    
 }
 
 .valide .fas {
@@ -88,6 +104,7 @@ input[type="button"] {
 
 margin-bottom: 15px;
 margin-left: 10px;
+font-size: 0.8em;
 }
 
 .money, .child
@@ -113,14 +130,15 @@ margin-left: 10px;
 {
 
 margin-left: 0px;
+font-size: 1.3em;
 
 }
 
 .article /* conteneur photo, descriptif et classement "hebergement" */
 {
     
-    width: 335px;
-    height: 200px;
+    width: 275px;
+    height: auto;
     margin: 0px 0px 15px 0px;
     
 }
@@ -146,15 +164,16 @@ margin-left: 0px;
 margin-left: 0px;
 margin-top: 30px;
 margin-bottom: 30px;
-
+font-size: 1.2em;
 }
 
 .article_pop /* conteneur photo, descriptif et classement "populaire" */
 {
     
-    width: 335px;
+    max-width: 280px;
     height: 145px;
     margin: 0px 10px 10px 0px;
+    font-size: 0.8em;
     
 }
 
@@ -162,11 +181,16 @@ margin-bottom: 30px;
 {
   margin-top: 0px;   
 }
+.block_act h2
+{
+    font-size: 1.3em;
+}
+
 
 .article_act
 {
     height: 190px;
-    width: 335px;
+    max-width: 275px;
     margin-bottom: 25px;
     box-shadow: 0px 0px 7px grey;
 }
@@ -198,5 +222,6 @@ footer {
 {
     width: 100%;
     padding-top: 40px;
+    font-size: 0.8em;
 }
 

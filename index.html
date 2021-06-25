@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel='stylesheet' type='text/css'>
     <link href="fo/css/all.min.css" rel='stylesheet' type='text/css'>
-    <!-- Résolution Smartphone comprise entre 320px et 480px -->
-    <!--<link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 480px)" href="smartphone.css" />-->
+
+
+    <!-- Résolution Smartphone comprise entre 320px et 380px -->
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 380px)" href="small_smartphones.css" />
+    <!-- Résolution Smartphone comprise entre 380px et 600px -->
+    <link rel="stylesheet" media="screen and (min-width: 381px) and (max-width: 600px)" href="smartphone.css" />
+    <!-- Résolution comprise entre 480px et 960px-->
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 960px)" href="labtoop1.css" />
+    <!-- Résolution comprise entre 960px et 1415px-->
+    <link rel="stylesheet" media="screen and (min-width: 960px) and (max-width: 1415px)" href="labtoop.css" />
+
+
+
+
+
+
+
+
+    
     <title>Projet 2-Nicolas Lenoir</title>
 </head>
 
 <body>
-    <div id="bloc_page">
+    <div class="bloc_page">
        <header>
             <p><embed src="images/logo/Reservia.svg" alt="logo" id="logo"/></p>
                     
@@ -25,22 +42,26 @@
                 
                 </header>
 
-                <div id="titre_principal">
+                <div class="titre_principal">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1> 
                     <h2>En plein centre ville ou en pleine nature</h2>
                 </div>
 
                
             
-                <div id="barre_recherche">
+                <div class="barre_recherche">
                     <div class="map"><i class="fas fa-map-marker-alt"></i></div>
                     <form class="saisie"><input type="text" placeholder="Marseille, France" /></form>
-                    <form class="valide"><input type="button" name="Rechercher" value="Rechercher" /><i class="fas fa-search"></i></form></form>
+                    <form class="valide"><input type="button" name="Rechercher" value="Rechercher" /><i class="fas fa-search"></i></form>
                 </div>
+                       
+
                 
-        <div class="filtre">
-                <div id="titre_filtre">Filtres</div>
-                    
+       <div id="block_filtre">
+                <div class="titre_filtre">Filtres</div>
+
+                    <div class="filtre">
+                
                         <div class="money"><div class="section">
                             <i class="fas fa-money-bill-wave"></i>
                         </div><p>Economique</p></div>
@@ -53,8 +74,11 @@
                         <div class="dog"><div class="section">
                             <i class="fas fa-dog"></i>
                         </div><p>Animaux autorisés</p></div>
-        </div>
-
+                    </div>
+                   
+                    </div>
+                
+            
 <div class="info"><div class="section2">                 
     <i class="fas fa-info"></i></div>
 <h2>Plus de 500 logements sont disponibles dans cette ville.</h2>
@@ -130,9 +154,9 @@
      </article>
 
     <article class="section_pop">
-        <header>
+        
             <h2>Les plus populaires<span class="cote"><i class="fas fa-chart-line"></i></span></h2>
-        </header>
+        
     
         <a href="#" class="article_pop">
             <div class="photo_pop"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -223,8 +247,9 @@
     </a>
 </div>
 </div>
+</div> 
 <footer>
-    <div class="blockf">
+    <div class="container">
         <div class="colonne1">
             <h2>A propos</h2>
             <ul>
@@ -252,15 +277,6 @@
     </div>
 
 </footer> 
-
-
-
-
-
-
-
-
-</div>  
-
+ 
 </body>
 </html>

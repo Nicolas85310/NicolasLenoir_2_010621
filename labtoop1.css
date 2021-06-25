@@ -1,0 +1,24 @@
+.block_page
+{
+    display: block;
+}
+
+
+.section_heb, .section_pop, .block_act
+{
+  width: 100%;
+  justify-content: space-evenly;
+  
+}
+
+
+
+
+
+
+.filtre
+{
+    flex-wrap: wrap;
+    justify-content: left;
+     
+}

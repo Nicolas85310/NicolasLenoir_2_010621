@@ -11,11 +11,17 @@
         font-weight: normal;
 }
 
-#bloc_page
-{  
+body
+
+{
     font-family: 'Raleway', Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.bloc_page
+{  
     max-width: 1380px;
-    padding-left: 50px;
     margin: auto;
 }
 
@@ -60,7 +66,7 @@ nav a:hover
 
 /* Titres */
 
-#titre_principal
+.titre_principal
 {
     display: flex;
     flex-direction: column;
@@ -86,10 +92,10 @@ h2
 
 
 
-#barre_recherche
+.barre_recherche
 {
    display: flex;
-   max-width: 500px;
+   width: 31%;
    height: 50px;
    align-items: center;
     
@@ -170,23 +176,47 @@ input[type=button]
 
 }
 
+/* faire disparaitre l'icône de recherche */
+
+.valide .fas 
+{
+    display: none;  
+}
+
 /*Onglets filtre*/
 
 i 
 {
 color:  #0065FC;   
 }
+.block_filtre
+{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+.titre_filtre {
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin-top: 50px;
+    width: 55px;
+
+} 
 
 .filtre
 {
-    margin-top: 30px;
+    
     display: flex;
     align-items: center;
     font-size: 1.1em;
     font-weight: bolder;
     flex-wrap: wrap;
     justify-content: left;
-     
+    margin-left: 70px;
+    margin-top: -35px; 
 }
 
 .filtre :hover /* animation des filtres lors du passage du curseur */
@@ -299,10 +329,11 @@ color:  #0065FC;
 }   
 
 .section_heb /* block hebergement */
-{   margin: 40px 40px 0 0;
+{   
     display: flex;
-    width: 880px;
-    min-height: 625px;
+    margin: 40px 40px 0 0;
+    width: 63%;
+    height: auto;
     border-radius: 20px;
     background-color: #f2f2f2;
     flex-wrap: wrap;
@@ -321,15 +352,7 @@ width: 100%;
 
 }
 
-.section_pop h2 /* titre h2 */
-{
-font-size: 1.4em;
-font-weight: bold;
-margin-left: 40px;
-margin-bottom: 5px;
-padding-top: 40px;
-width: 100%;
-}
+
 .article /* conteneur photo, descriptif et classement */
 {
     display: flex;
@@ -403,19 +426,27 @@ span i /* afficher en gris les étoiles */
 {
 font-size: 1.2em;
 margin-left: 40px;
-width: 100%;
-
+padding-top: 0px;
 font-weight: bold;
 }
 
 .section_pop {
-    margin: 40px 40px 0 0;
+    
     display: flex;
-    width: 420px;
-    min-height: 625px;
+    margin: 40px 40px 0 0;
+    width: 31%;
+    height: auto;
     border-radius: 20px;
     background-color: #f2f2f2;
     flex-wrap: wrap;
+}
+
+.section_pop h2 /* titre h2 */
+{
+font-size: 1.4em;
+font-weight: bold;
+margin-left: 40px;
+width: 100%;
 }
 
 .article_pop /* conteneur photo, descriptif et classement */
@@ -426,7 +457,7 @@ font-weight: bold;
     width: 340px;
     height: 140px;
     border-radius: 20px;
-    margin: -10px 0px 40px 35px; 
+    margin: 0px 0px 40px 35px; 
     box-shadow: 0px 0px 10px grey; 
 }
 
@@ -562,20 +593,20 @@ img
 /* footer */
 
 footer {
+    
     background-color: #f2f2f2;
     margin-top: 55px;
 }
 
-.blockf {
+.container {
     max-width: 1380px;
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    margin: auto;
 }
 
-.blockf h2{
-    margin-left: 50px;
+.container h2{
+    
     font-size: 1.2em;
     font-weight: bold;
 }    
@@ -584,89 +615,17 @@ footer {
 {
     width: 33%;
     padding-top: 50px;
+    
 
 }
 
 footer ul
 {
     list-style-type: none;
-    padding-left: 50px;
+    padding-left: 0px;
     line-height: 2em;
     
 }
 
 
-                                     /*RESPONSIVE DESIGN */
-
-
-/* Pour les résolutions comprises entre 320px et 480 px Smartphone) */
-
-@media all and (min-width: 320px) and (max-width: 480px) {
-    nav {
-        position: relative;
-    }
-    
-    .inscrire {
-        position: absolute;
-        right: 0px;
-        top: -40px;
-        font-weight: bold;
-    }
-    
-    input[type="button"] {
-        min-width: 50px;
-        height: 50px;
-        font-size: 0px;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;  
-       
-    }
-    
-    .valide {
-        position: relative;
-        width: 50px;
-    }
-    
-    .valide .fas {
-        position: absolute;
-        font-size: 100%;
-        color: white;
-        right: 20px;
-        top: 15px;
-    }
-
-    #titre_filtre
-
-    {
-        position: absolute;
-        top: 350px;
-    
-    }
-
-    .filtre {
-        margin-top : 70px;
-        margin-left: auto;
-    }
-
-    .money, .child, .heart, .dog 
-
-{
-    margin-bottom: 15px;
-    margin-left: 0px;
-}
-    
-    .article, .article_act {
-        width: 335px;
-        height:190px;
-    }
-    
-    .img {
-        height: 135px;
-    }
-    
-    .blockf h2, .footer ul {
-        padding-left: 20px;
-    }
-}
+  
