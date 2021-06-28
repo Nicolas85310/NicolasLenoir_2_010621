@@ -1,18 +1,23 @@
 
-/* Pour les résolutions comprises entre 320px et 480 px Smartphone) */
+/* Pour les résolutions comprises entre 380px et 600px Smartphone) */
 
+body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 .block_heb_pop
 {
-    
-    width: 100%;
-    justify-content: center ; 
     flex-direction: column-reverse;
 }
-.section_heb, .section_pop, .block_act, .titre_filtre, .info, .container
+.section_heb, .section_pop, .block_act, .container
 {
+  
   width: 100%;
-  padding-left: 22px;
+  justify-content: center;
+  
 }
 
 .info
@@ -26,10 +31,10 @@ nav {
     position: relative;
 }
 
-.titre_principal, .barre_recherche
+.titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
 {
     padding-left: 15px;
-    max-width: 320px;  
+     
 }
 
 .barre_recherche
@@ -82,10 +87,9 @@ input[type="button"] {
     margin-left: 8px;
     
 }
+
 .money, .child, .heart, .dog 
-
 {
-
 margin-bottom: 15px;
 margin-left: 10px;
 }
@@ -182,6 +186,7 @@ footer {
     
     background-color: #f2f2f2;
     margin-top: 30px;
+    
 }
 
 
@@ -192,11 +197,13 @@ footer {
     
     flex-direction: column; 
     
+    
 }
 
 .colonne1, .colonne2, .colonne3 
 {
     width: 100%;
     padding-top: 40px;
+    padding-left: 15px;
 }
 

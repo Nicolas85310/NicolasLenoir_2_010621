@@ -1,0 +1,54 @@
+
+body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
+{
+    padding-left: 15px;
+     
+}
+
+.block_heb_pop
+{
+    
+    
+	  width: 100%;
+    max-width: none;
+    margin: 0;
+    
+}
+.section_heb, .section_pop, .block_act
+{
+  width: 100%;
+  justify-content: space-evenly;
+  margin-right: 0px;
+}
+
+.article
+{
+  padding-bottom: 40px;
+}
+
+
+
+
+.filtre
+{
+    flex-wrap: wrap;
+    justify-content: left;
+     
+}
+
+.money, .child, .heart, .dog 
+{
+
+margin-bottom: 15px;
+margin-left: 15px;
+}

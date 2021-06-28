@@ -5,14 +5,23 @@
 .block_heb_pop
 {
     
-    width: 100%;
-    justify-content: center ; 
+    
+	width: 100%;
+    max-width: none;
+    margin: 0;
     flex-direction: column-reverse;
 }
-.section_heb, .section_pop, .block_act, .titre_filtre, .info, .container
+.section_heb, .section_pop, .block_act, .container
 {
+  
   width: 100%;
-  padding-left: 22px;
+  justify-content: center;
+  
+}
+.titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
+{
+    padding-left: 15px;
+     
 }
 
 .info
@@ -28,13 +37,13 @@ nav {
 
 .titre_principal
 {
-    padding-left: 15px;
+    
     max-width: 320px;  
 }
 
 .barre_recherche
 {
-    padding-left: 15px;
+    
     margin-top: 30px;
     width: 200px; 
     
@@ -223,5 +232,6 @@ footer {
     width: 100%;
     padding-top: 40px;
     font-size: 0.8em;
+    padding-left: 15px;
 }
 
