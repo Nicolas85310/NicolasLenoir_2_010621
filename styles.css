@@ -15,14 +15,13 @@ body
 
 {
     font-family: 'Raleway', Arial, sans-serif;
-    margin:0;
-    padding:0;
 }
 
 .bloc_page
-{  
-    max-width: 1380px;
+{   
     margin: auto;
+    max-width: 1440px;
+   
 }
 
 /* Header */
@@ -95,7 +94,7 @@ h2
 .barre_recherche
 {
    display: flex;
-   width: 31%;
+   width: 100ù;
    height: 50px;
    align-items: center;
     
@@ -126,8 +125,9 @@ h2
 
 .saisie
 {
-    display: flex;  
-}
+    display: flex;
+    width: 230px; 
+}   
 
 
 
@@ -135,7 +135,7 @@ input[type=text]
 {
    
     display: flex;
-    min-width: 234px;
+    width: 100%;
     height: 46px;
     padding-left: 15px;
     border-top: #f2f2f2 1px solid;
@@ -147,13 +147,14 @@ input[type=text]
 ::placeholder
 
 {
-    color: black;
+    color: #0a0a0a;
     font-weight: bold;
 }
 
 .valide
 {
-    display: flex;  
+    display: flex; 
+    min-width: 10%; 
 }
 
 .valide :hover
@@ -165,9 +166,10 @@ input[type=text]
 input[type=button] 
 {
     display: flex;
-    min-width: 134px;
+    width: 125px;
     height: 50px;
     border: none;
+    font-size: 1em;
     border-radius: 0 10px 10px 0;
     background-color: #0065FC;
     align-items: center;
@@ -181,6 +183,20 @@ input[type=button]
 .valide .fas 
 {
     display: none;  
+}
+
+/* faire disparaitre la navigation smartphone */
+
+header [href="#inscription"], .nav_smart
+{
+    display: none;
+}
+
+/* faire apparaitre le tag "S'inscrire" en gras */
+header nav ul li [href="#inscription"]
+{
+    display: inline;
+    font-weight: bold;
 }
 
 /*Onglets filtre*/
@@ -222,7 +238,7 @@ color:  #0065FC;
 .filtre :hover /* animation des filtres lors du passage du curseur */
 {
     background-color: #DEEBFF;  
-    
+    border-radius: 40px;
 } 
 
 
@@ -240,6 +256,8 @@ color:  #0065FC;
     border: #d9d9d9 2px solid;
     border-left: none;
     align-items: center;
+    
+    
      
 }
 
@@ -248,25 +266,7 @@ color:  #0065FC;
     padding: 10px;
   } 
 
-  .money
-  {
-     width: 195px;
-  }
   
-  .child
-  {
-     width: 150px;
-  }  
-
-  .heart
-  {
-     width: 180px;
-  }  
-
-  .dog
-  {
-     width: 240px;
-  }  
 
 
 
@@ -358,7 +358,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 245px;
+    width: 28%;
     height: 200px;
     border-radius: 20px;
     margin: -10px 0px 40px 35px; 
@@ -446,6 +446,7 @@ font-weight: bold;
 font-size: 1.4em;
 font-weight: bold;
 margin-left: 40px;
+margin-top: 40px;
 width: 100%;
 }
 
@@ -454,7 +455,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 340px;
+    width: 83%;
     height: 140px;
     border-radius: 20px;
     margin: 0px 0px 40px 35px; 
@@ -484,7 +485,7 @@ width: 100%;
 .photo_pop
 {
    display: flex;
-   max-width: 127px;
+   width: 50%;
    height: 130px;
    margin: 5px;
 }

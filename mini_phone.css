@@ -1,37 +1,44 @@
 
-/* Pour les résolutions comprises entre 380px et 600px Smartphone) */
+/* Pour les résolutions inférieures à 320px mini_phone) */
 
 
+
+
+
+body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 header p
 {
     margin-left: 15px;
+    
 }
 .block_heb_pop
 {
-    
     flex-direction: column-reverse;
-   
 }
 .section_heb, .section_pop, .block_act, .container
 {
   
   width: 100%;
   justify-content: center;
-  
+  font-size: 0.8em;
 }
 
 .info
 {
     margin-bottom: 35px ;
+    font-size: 0.8em;
     
 }
 
 
-
 /* faire disparaitre la navigation desktop */
-nav 
-{
+nav {
     display: none;
 }
 
@@ -39,7 +46,7 @@ nav
 header [href="#inscription"]
   {
     display: inline;
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: #0065FC;
     text-decoration: none;
     position: absolute;
@@ -59,7 +66,7 @@ header [href="#inscription"]
     display: flex;
     justify-content: center;
     color: #0065FC;
-    font-size: 1.1em;
+    font-size: 0.9em;
     border-bottom: 3px solid;
     padding-bottom: 15px;
     width: 50%;
@@ -70,15 +77,19 @@ header a:hover
     color: #0a0a0a; 
     border-color: #f2f2f2; 
 }
+
 .titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
 {
     padding-left: 15px;
+    
      
 }
 
 .barre_recherche
 {
     margin-top: 30px;
+    
+  
 }
 
 .map
@@ -131,7 +142,9 @@ input[type="button"] {
 {
 margin-bottom: 15px;
 margin-left: 10px;
+font-size: 0.8em;
 }
+
 
 
 
@@ -146,7 +159,7 @@ margin-left: 10px;
     
     background-color: white;
     margin-top: 0px;
-    margin-right: 0px;
+    
 }  
 
 .section_heb h2, .afficher_plus /* titre h2 */
@@ -156,14 +169,7 @@ margin-left: 0px;
 
 }
 
-.article /* conteneur photo, descriptif et classement "hebergement" */
-{
-    
-    width: 90%;
-   
-    margin: 0px 0px 15px 0px;
-    
-}
+
 
 .cote
 {
@@ -175,6 +181,7 @@ margin-left: 0px;
     border-radius: 0px;
     margin: 0px;
     padding-bottom: 30px;
+    
     
     
  }  
@@ -193,13 +200,25 @@ margin-bottom: 30px;
 {
     
     width: 90%;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 15px 0px;
+    font-size: 0.8em;
+
+}
+
+.article /* conteneur photo, descriptif et classement "hebergement" */
+{
+    
+    width: 90%;
+    margin: 0px 0px 15px 0px;
+    font-size: 0.8em;
     
 }
 
+
 .block_act
 {
-  margin-top: 0px;   
+  margin-top: 0px; 
+  font-size: 0.7em;  
 }
 
 .article_act
@@ -247,5 +266,6 @@ footer {
     width: 100%;
     padding-top: 40px;
     padding-left: 15px;
+    font-size: 0.7em;
 }
 

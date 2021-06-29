@@ -7,12 +7,19 @@
     <link href="fo/css/all.min.css" rel='stylesheet' type='text/css'>
 
 
-    <!-- Résolution Smartphone comprise entre 320px et 380px -->
-    <link rel="stylesheet" media="screen and (max-width: 380px)" href="small_smartphones.css" />
+
+
+    
+    <!-- Résolution inférieur à 320px -->
+    <link rel="stylesheet" media="screen and (max-width: 319px)" href="mini_phone.css" />
+    <!-- Résolution comprise entre 320px et 380px -->
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 379px)" href="small_smartphones.css" />
     <!-- Résolution Smartphone comprise entre 380px et 600px -->
-    <link rel="stylesheet" media="screen and (min-width: 380px) and (max-width: 600px)" href="smartphone.css" />
-    <!-- Résolution comprise entre 600px et 1024px-->
-    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1350px)" href="tablette.css" />
+    <link rel="stylesheet" media="screen and (min-width: 380px) and (max-width: 599px)" href="smartphone.css" />
+    <!-- Résolution comprise entre 600px et 1200px-->
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1200px)" href="small_tablette.css" />
+    <!-- Résolution comprise entre 1200px et 1272px-->
+    <link rel="stylesheet" media="screen and (min-width: 1200px) and (max-width: 1332px)" href="tablette.css" />
     <!-- Résolution supérieure à 1024px-->
     <!--<link rel="stylesheet" media="screen and (min-width: 1024px)" href="desktop.css" />-->
 
@@ -30,13 +37,18 @@
 <body>
     <div class="bloc_page">
        <header>
-            <p><embed src="images/logo/Reservia.svg" alt="logo" id="logo"/></p>
+            <p><embed src="images/logo/Reservia.svg" alt="logo" id="logo"/></p><a href="#inscription">S'inscrire</a>
+
+            <div class="nav_smart">
+                <a href="#hebergements">Hébergements</a> 
+                <a href="#activites">Activités</a>
+            </div>
                     
                     <nav>
                         <ul>
                             <li><a href="#hebergements">Hébergements</a></li>
                             <li><a href="#activites">Activités</a></li>
-                            <li><a href="#">S'inscrire</a></li>
+                            <li><a href="#inscription">S'inscrire</a></li>
                         </ul>
                     </nav>
                 
@@ -86,7 +98,7 @@
 
 
 <div class="block_heb_pop">
-     <article class="section_heb">
+     <section class="section_heb">
          <h2 id="hebergements">Hébergements à Marseille</h2>
 
         <a href="#" class="article">
@@ -151,9 +163,9 @@
                     class="fas fa-star"></i><i class="fas fa-star"></i></div>
         </a>
         <p class="afficher_plus">Afficher plus</p>
-     </article>
+    </section>
 
-    <article class="section_pop">
+    <section class="section_pop">
         
             <h2>Les plus populaires<span class="cote"><i class="fas fa-chart-line"></i></span></h2>
         
@@ -196,7 +208,7 @@
                         class="fas fa-star"></i><span><i class="fas fa-star"></i></span></div>
             </div>
         </a>
-    </article>
+    </section>
 </div>
 
 <div class="block_act">

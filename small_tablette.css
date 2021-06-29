@@ -5,11 +5,11 @@ body
     padding: 0;
     margin: 0;
 }
-
 header p
 {
     margin-left: 15px;
 }
+
 
 
 .titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
@@ -22,7 +22,7 @@ header p
 {
     
     
-	  width: 100%;
+	width: 100%;
     max-width: none;
     margin: 0;
     
@@ -30,12 +30,13 @@ header p
 .section_heb, .section_pop, .block_act
 {
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-right: 0;
 }
 
 .article
 {
+  width: 40%;  
   padding-bottom: 40px;
   height: auto;
 }
@@ -60,6 +61,6 @@ margin-left: 15px;
 .article_pop /* conteneur photo, descriptif et classement */
 
 {
-  width: 30%;
-  
+  width: 25%;
+  height: auto;
 }

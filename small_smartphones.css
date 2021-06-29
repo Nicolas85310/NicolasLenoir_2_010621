@@ -1,14 +1,26 @@
 
-/* Pour les résolutions inférieures à 380px Small_Smartphone) */
+/* Pour les résolutions comprises entre 320px et 380px Small_Smartphone) */
+
+header p
+{
+    margin-left: 15px;
+}
 
 
+
+body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header p
+{
+    margin-left: 15px;
+}
 .block_heb_pop
 {
-    
-    
-	width: 100%;
-    max-width: none;
-    margin: 0;
     flex-direction: column-reverse;
 }
 .section_heb, .section_pop, .block_act, .container
@@ -18,36 +30,64 @@
   justify-content: center;
   
 }
+
+.info
+{
+    margin-bottom: 35px ;
+    
+}
+
+/* faire disparaitre la navigation desktop */
+nav 
+{
+    display: none;
+}
+
+/*faire apparaitre la navigation smartphone */
+header [href="#inscription"]
+  {
+    display: inline;
+    font-size: 1.1em;
+    color: #0065FC;
+    text-decoration: none;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-weight: bold;
+}
+.nav_smart
+{
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px;   
+    width: 100%;
+}
+.nav_smart a
+{   
+    display: flex;
+    justify-content: center;
+    color: #0065FC;
+    font-size: 1.1em;
+    border-bottom: 3px solid;
+    padding-bottom: 15px;
+    width: 50%;
+}
+
+header a:hover
+{
+    color: #0a0a0a; 
+    border-color: #f2f2f2; 
+}
+
 .titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
 {
     padding-left: 15px;
      
 }
 
-.info
-{
-    margin-bottom: 35px ;
-    max-width: 90%;
-}
-
-
-nav {
-    position: relative;
-}
-
-.titre_principal
-{
-    
-    max-width: 320px;  
-}
-
 .barre_recherche
 {
-    
     margin-top: 30px;
-    width: 200px; 
-    
- 
 }
 
 .map
@@ -55,18 +95,7 @@ nav {
     
     border-radius: 15px 0 0 15px;
 }
-.saisie
-{
-    max-width: 210px;  
-}
 
-input[type=text]
-{
-   
-    
-    min-width: 224px;
-   
-}
 input[type="button"] {
     min-width: 50px;
     height: 50px;
@@ -82,7 +111,6 @@ input[type="button"] {
     width: 50px;
     border-radius: 15px;
     margin-left: -5px;
-    
 }
 
 .valide .fas {
@@ -107,19 +135,14 @@ input[type="button"] {
     margin-left: 8px;
     
 }
+
 .money, .child, .heart, .dog 
-
 {
-
 margin-bottom: 15px;
 margin-left: 10px;
-font-size: 0.8em;
 }
 
-.money, .child
-{
-    width: 46%;
-} 
+
 
 .info h2
 {   
@@ -139,18 +162,10 @@ font-size: 0.8em;
 {
 
 margin-left: 0px;
-font-size: 1.3em;
 
 }
 
-.article /* conteneur photo, descriptif et classement "hebergement" */
-{
-    
-    width: 275px;
-    height: auto;
-    margin: 0px 0px 15px 0px;
-    
-}
+
 
 .cote
 {
@@ -162,6 +177,7 @@ font-size: 1.3em;
     border-radius: 0px;
     margin: 0px;
     padding-bottom: 30px;
+    font-size: 0.8em;
     
     
  }  
@@ -173,40 +189,50 @@ font-size: 1.3em;
 margin-left: 0px;
 margin-top: 30px;
 margin-bottom: 30px;
-font-size: 1.2em;
+
 }
 
 .article_pop /* conteneur photo, descriptif et classement "populaire" */
 {
     
-    max-width: 280px;
-    height: 145px;
-    margin: 0px 10px 10px 0px;
-    font-size: 0.8em;
+    width: 80%;
+   
+    margin: 0px 0px 15px 0px;
+}
+
+.article /* conteneur photo, descriptif et classement "hebergement" */
+{
+    
+    width: 80%;
+    margin: 0px 0px 15px 0px;
     
 }
 
+
 .block_act
 {
-  margin-top: 0px;   
+  margin-top: 0px; 
+  font-size: 0.7em;  
 }
-.block_act h2
-{
-    font-size: 1.3em;
-}
-
 
 .article_act
-{
-    height: 190px;
-    max-width: 275px;
+{   height: 190px;
+    width: 80%;
     margin-bottom: 25px;
     box-shadow: 0px 0px 7px grey;
 }
 
 .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"] 
-{ 
+{
     height: 190px;
+}
+.Pomègues_Frioul, .Dame_Longchamps
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 100%; 
+    
 }
 
 /* footer */
@@ -215,6 +241,7 @@ footer {
     
     background-color: #f2f2f2;
     margin-top: 30px;
+    
 }
 
 
@@ -225,13 +252,14 @@ footer {
     
     flex-direction: column; 
     
+    
 }
 
 .colonne1, .colonne2, .colonne3 
 {
     width: 100%;
     padding-top: 40px;
-    font-size: 0.8em;
     padding-left: 15px;
+    font-size: 0.7em;
 }
 
