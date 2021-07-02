@@ -1,32 +1,12 @@
 
-/* Pour les résolutions comprises entre 380px et 600px Smartphone) */
+/* Pour les résolutions comprises entre 380px et 415px Smartphone) */
 
-
-
-header p
+body
 {
-    margin-left: 15px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-.block_heb_pop
-{
-    
-    flex-direction: column-reverse;
-   
-}
-.section_heb, .section_pop, .block_act, .container
-{
-  
-  width: 100%;
-  justify-content: center;
-  
-}
-
-.info
-{
-    margin-bottom: 35px ;
-    
-}
-
 
 
 /* faire disparaitre la navigation desktop */
@@ -70,6 +50,33 @@ header a:hover
     color: #0a0a0a; 
     border-color: #f2f2f2; 
 }
+header p
+{
+    margin-left: 15px;
+}
+.block_heb_pop
+{
+    
+    flex-direction: column-reverse;
+   
+}
+.section_heb, .section_pop, .block_act, .container
+{
+  
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.info
+{
+    margin-bottom: 35px ;
+    
+}
+
+
+
+
 .titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
 {
     padding-left: 15px;

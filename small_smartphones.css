@@ -1,11 +1,5 @@
 
-/* Pour les résolutions comprises entre 320px et 380px Small_Smartphone) */
-
-header p
-{
-    margin-left: 15px;
-}
-
+/* Pour les résolutions comprises entre 320px et 380px small_Smartphones) */
 
 
 body
@@ -15,27 +9,6 @@ body
     margin: 0;
 }
 
-header p
-{
-    margin-left: 15px;
-}
-.block_heb_pop
-{
-    flex-direction: column-reverse;
-}
-.section_heb, .section_pop, .block_act, .container
-{
-  
-  width: 100%;
-  justify-content: center;
-  
-}
-
-.info
-{
-    margin-bottom: 35px ;
-    
-}
 
 /* faire disparaitre la navigation desktop */
 nav 
@@ -78,6 +51,33 @@ header a:hover
     color: #0a0a0a; 
     border-color: #f2f2f2; 
 }
+header p
+{
+    margin-left: 15px;
+}
+.block_heb_pop
+{
+    
+    flex-direction: column-reverse;
+   
+}
+.section_heb, .section_pop, .block_act, .container
+{
+  
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.info
+{
+    margin-bottom: 35px ;
+    font-size: 0.85em;
+    
+}
+
+
+
 
 .titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
 {
@@ -95,6 +95,12 @@ header a:hover
     
     border-radius: 15px 0 0 15px;
 }
+
+.saisie
+{
+    display: flex;
+    width: 60%; 
+}   
 
 input[type="button"] {
     min-width: 50px;
@@ -147,6 +153,7 @@ margin-left: 10px;
 .info h2
 {   
     max-width: 320px;
+    
 }
 
 
@@ -155,7 +162,7 @@ margin-left: 10px;
     
     background-color: white;
     margin-top: 0px;
-    
+    margin-right: 0px;
 }  
 
 .section_heb h2, .afficher_plus /* titre h2 */
@@ -165,19 +172,28 @@ margin-left: 0px;
 
 }
 
-
-
-.cote
+.article /* conteneur photo, descriptif et classement "hebergement" */
 {
-    width: 10%;
+    
+    width: 90%;
+   
+    margin: 0px 0px 15px 0px;
+    
 }
+
+
+
+.cote i
+{
+  margin-left: 80px;  
+}
+
 
 .section_pop
  {
     border-radius: 0px;
     margin: 0px;
     padding-bottom: 30px;
-    font-size: 0.8em;
     
     
  }  
@@ -189,35 +205,27 @@ margin-left: 0px;
 margin-left: 0px;
 margin-top: 30px;
 margin-bottom: 30px;
+font-size: 1.25em;
 
 }
 
 .article_pop /* conteneur photo, descriptif et classement "populaire" */
 {
     
-    width: 80%;
-   
-    margin: 0px 0px 15px 0px;
-}
-
-.article /* conteneur photo, descriptif et classement "hebergement" */
-{
-    
-    width: 80%;
-    margin: 0px 0px 15px 0px;
+    width: 90%;
+    margin: 0px 0px 10px 0px;
+    font-size: 0.8em;
     
 }
-
 
 .block_act
 {
-  margin-top: 0px; 
-  font-size: 0.7em;  
+  margin-top: 0px;   
 }
 
 .article_act
 {   height: 190px;
-    width: 80%;
+    width: 90%;
     margin-bottom: 25px;
     box-shadow: 0px 0px 7px grey;
 }
@@ -260,6 +268,5 @@ footer {
     width: 100%;
     padding-top: 40px;
     padding-left: 15px;
-    font-size: 0.7em;
 }
 
