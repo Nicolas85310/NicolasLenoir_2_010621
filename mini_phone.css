@@ -1,10 +1,6 @@
 
 /* Pour les résolutions inférieures à 320px mini_phone) */
 
-
-
-
-
 body
 {
     width: 100%;
@@ -98,6 +94,12 @@ header a:hover
     border-radius: 15px 0 0 15px;
 }
 
+
+.saisie
+{
+    display: flex;
+    width: 55%; 
+}   
 input[type="button"] {
     min-width: 50px;
     height: 50px;
@@ -171,9 +173,9 @@ margin-left: 0px;
 
 
 
-.cote
+.cote i
 {
-    width: 10%;
+  margin-left: 80px;  
 }
 
 .section_pop
@@ -193,6 +195,7 @@ margin-left: 0px;
 margin-left: 0px;
 margin-top: 30px;
 margin-bottom: 30px;
+
 
 }
 
@@ -269,3 +272,55 @@ footer {
     font-size: 0.7em;
 }
 
+/* Résolution inférieur à 300px */
+
+@media screen and (max-width: 300px) {
+    .descriptif_pop h4, .descriptif_pop p, .photo_pop
+    {
+     width: 70%;
+    }
+ 
+ .section_pop h2
+{
+    font-size: 1.3em; 
+}
+
+.cote i
+{
+  margin-left: 60px;  
+}
+}
+
+/* Résolution inférieur à 250px */
+
+@media screen and (max-width: 250px) {
+
+    
+
+
+    .saisie
+{
+    display: flex;
+    width: 50%; 
+    
+}   
+
+::placeholder
+
+{
+    
+    font-size: 0.7em;
+    justify-content: left;
+
+}
+
+.section_pop 
+{
+    font-size: 0.6em; 
+}
+
+
+
+
+
+}
