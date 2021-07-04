@@ -12,7 +12,20 @@ header p
     margin-left: 15px;
 }
 
+ nav
+{
+    display: flex;
+    width: 65%; 
+    font-size: 0.9em;
+    margin-top:  2px;
+} 
 
+nav [href="#hebergements"]
+{  
+   
+   padding-top: 9px;
+    
+}
 
 
 .section_heb, .section_pop, .block_act, .container
@@ -79,7 +92,7 @@ margin-left: 10px;
 
 .info h2
 {   
-  max-width: 320px;
+  width: 100%;
 }
 
 
@@ -194,8 +207,6 @@ footer {
 
 @media screen and (min-width: 530px)  {
 
-  
-
   .article, .article_act,.article_pop
  {
     margin-left: auto;
@@ -208,11 +219,7 @@ footer {
  }
  
  
- .article_pop
-  { 
-  width: 45%;
-  font-size: 0.6em;
-  }
+
   .article, .article_act,.article_pop
   {
      margin-left: auto;
@@ -228,7 +235,7 @@ footer {
   .article_pop
    { 
    width: 45%;
-   font-size: 0.5em;
+   font-size: 0.7em;
    }
  
    .block_act

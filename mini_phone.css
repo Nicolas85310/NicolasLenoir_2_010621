@@ -8,16 +8,12 @@ body
     margin: 0;
 }
 
-header p
-{
-    margin-left: 15px;
-    
-}
+
 .block_heb_pop
 {
     flex-direction: column-reverse;
 }
-.section_heb, .section_pop, .block_act, .container
+.section_heb, .section_pop, .block_act, .container, nav
 {
   
   width: 100%;
@@ -33,45 +29,105 @@ header p
 }
 
 
-/* faire disparaitre la navigation desktop */
-nav {
+/* navigation smartphone */
+nav
+{
+    display: flex;
+    width: 100%; 
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+nav a
+{
+    display: flex;
+    justify-content: center;
+   
+}
+
+nav ul
+{
+display: flex;
+width: 100%;
+ margin: 0;
+ padding: 0;
+ 
+}
+
+nav li 
+{   
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav li:nth-child(3n)
+{
+    width: 0%;
+}
+
+nav li:nth-child(2n), nav li:nth-child(3n) {
+    margin-right: 0px;
+}
+
+
+/* supprimer la barre bleue du dessus (tag "hébergements") */
+hr
+{
     display: none;
 }
 
-/*faire apparaitre la navigation smartphone */
+
+
+
+
+
+
 header [href="#inscription"]
-  {
+{   
     display: inline;
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #0065FC;
     text-decoration: none;
     position: absolute;
     right: 40px;
-    top: 40px;
+    top: 30px;
     font-weight: bold;
+    width: 20%;
+   
 }
-.nav_smart
+nav [href="#hebergements"]
 {
-    display: flex;
-    justify-content: center; 
-    margin-top: 30px;   
-    width: 100%;
-}
-.nav_smart a
-{   
-    display: flex;
-    justify-content: center;
+     
     color: #0065FC;
-    font-size: 0.9em;
+    font-size: 1.1em;
     border-bottom: 3px solid;
     padding-bottom: 15px;
-    width: 50%;
+    padding-top: 0px; 
+    width: 100%;
+    
+   
 }
 
-header a:hover
+nav [href="#activites"]
 {
+    
+    font-size: 1.1em;
+    border-bottom: 3px solid;
+    padding-bottom: 15px;
     color: #0a0a0a; 
-    border-color: #f2f2f2; 
+    border-color: #f2f2f2;
+    width: 100%;
+    
+ 
+    
+}
+
+header p
+{
+    margin-left: 15px;
 }
 
 .titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
@@ -150,10 +206,6 @@ font-size: 0.8em;
 
 
 
-.info h2
-{   
-    max-width: 320px;
-}
 
 
 .section_heb /* block hebergement */
