@@ -89,15 +89,16 @@ nav  [href="#activites"]
 hr
 {
 width: 135px;
-color: #0065FC;
 margin-top: -17px;
+border: 1px solid #0065FC;
 }
 
 nav [href="#hebergements"]
 {  
    display: flex;
    padding-top: 8px;
-   justify-content: center;  
+   justify-content: center; 
+   
 }
 
 nav li:nth-child(2n), nav li:nth-child(3n)
