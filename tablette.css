@@ -13,7 +13,13 @@ header p
     margin-left: 15px;
 }
 
-
+nav
+{
+    display: flex;
+    width: 72%; 
+    font-size: 0.9em;
+    margin-top:  2px;
+} 
 
 
 .section_heb, .section_pop, .block_act, .container
@@ -39,15 +45,12 @@ header p
      
 }
 
-.barre_recherche
-{
-    margin-top: 30px;
-}
+
 
 .saisie
 {
     display: flex;
-    width: 35%; 
+    width: 32%; 
 }   
 .map
 {
@@ -228,7 +231,6 @@ footer {
     display: flex;
     flex-direction: row; 
    
-    
 }
 
 

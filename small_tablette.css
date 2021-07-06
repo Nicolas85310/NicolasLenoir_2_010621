@@ -1,5 +1,5 @@
 
-/* Resolution comprise entre 415px et 600px small_tablette */
+/* Resolution comprise entre 480px et 600px small_tablette */
 
 body
 {
@@ -17,8 +17,14 @@ header p
     display: flex;
     width: 65%; 
     font-size: 0.9em;
-    margin-top:  2px;
+    margin-top:  2px; 
 } 
+
+nav li
+{
+    margin-right: 10px;
+    margin-left: 5px;
+}
 
 nav [href="#hebergements"]
 {  
@@ -51,10 +57,7 @@ nav [href="#hebergements"]
      
 }
 
-.barre_recherche
-{
-    margin-top: 30px;
-}
+
 
 .saisie
 {
@@ -203,9 +206,25 @@ footer {
   padding-left: 15px;
 }
 
-/* Résolution comprise entre 470px à 600px */
+/* Résolution comprise entre 530px à 600px */
 
 @media screen and (min-width: 530px)  {
+
+  nav
+  {
+      display: flex;
+      width: 70%; 
+      font-size: 0.9em;
+      margin-top:  2px; 
+  } 
+
+  nav li
+{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+ 
 
   .article, .article_act,.article_pop
  {

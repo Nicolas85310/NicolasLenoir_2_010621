@@ -61,11 +61,14 @@ nav ul
 {
     list-style-type: none;
     display: flex;
+    
+    
 }
 
 nav li
 {
     margin-right: 10px;
+    margin-left: 40px;
 }
 
  /* coloration en bleu des liens */
@@ -90,7 +93,7 @@ hr
 {
 width: 135px;
 margin-top: -17px;
-border: 1px solid #0065FC;
+border: 1.5px solid #0065FC;
 }
 
 nav [href="#hebergements"]
@@ -372,8 +375,8 @@ color:  #0065FC;
 .section_heb /* block hebergement */
 {   
     display: flex;
-    margin: 40px 40px 0 0;
-    width: 63%;
+    margin-top: 40px;
+    width: 64.5%;
     height: auto;
     border-radius: 20px;
     background-color: #f2f2f2;
@@ -673,6 +676,8 @@ footer ul
 
 /* Résolution desktop comprise entre 1200px et 1287px */
 @media screen and (min-width: 1201px) and (max-width: 1287px) {
+
+
 
 .article_pop {
     font-size: 0.8em;

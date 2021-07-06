@@ -1,5 +1,5 @@
 
-/* Pour les résolutions comprises entre 380px et 415px Smartphone) */
+/* Pour les résolutions comprises entre 380px et 480px Smartphone) */
 
 body
 {
@@ -137,7 +137,7 @@ header p
 
 .barre_recherche
 {
-    margin-top: 30px;
+    margin-top: 38px;
 }
 
 .map

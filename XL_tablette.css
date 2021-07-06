@@ -13,8 +13,6 @@ header p
 }
 
 
-
-
 .section_heb, .section_pop, .container
 {
   
@@ -30,24 +28,15 @@ header p
 }
 
 
-
-
 .titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
 {
     padding-left: 15px;
      
 }
 
-.barre_recherche
-{
-    margin-top: 30px;
-}
 
-.saisie
-{
-    display: flex;
-    width: 35%; 
-}   
+
+
 .map
 {
     
@@ -74,11 +63,6 @@ header p
 margin-bottom: 15px;
 margin-left: 10px;
 }
-
-
-
-
-
 
 .section_heb /* block hebergement */
 {   
