@@ -1,0 +1,233 @@
+
+/* Resolution comprise entre 700px et 1200px XL_tablette */
+
+body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+header p
+{
+    margin-left: 15px;
+}
+
+
+.section_heb, .section_pop, .container
+{
+  
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.info
+{
+    margin-bottom: 35px ;
+    
+}
+
+
+.titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
+{
+    padding-left: 15px;
+     
+}
+
+
+
+
+.map
+{
+    
+    border-radius: 15px 0 0 15px;
+}
+
+
+.titre_filtre {
+    
+  margin-top: 30px;
+  
+}
+
+
+.filtre {
+  
+  margin-top: 20px;
+  margin-left: 8px;
+  
+}
+
+.money, .child, .heart, .dog 
+{
+margin-bottom: 15px;
+margin-left: 10px;
+}
+
+.section_heb /* block hebergement */
+{   
+  
+  background-color: #f2f2f2;
+  margin-top: 0px;
+  margin-right: 0px;
+}  
+
+.section_heb h2, .afficher_plus /* titre h2 */
+{
+
+margin-left: 0px;
+
+}
+
+.article /* conteneur photo, descriptif et classement "hebergement" */
+{
+  
+  width: 90%;
+ 
+  margin: 0px 0px 15px 0px;
+  
+}
+
+.cote
+{
+  width: 10%;
+}
+
+.section_pop
+{
+  
+  margin: 15px 0 0 0;
+  padding-bottom: 30px;
+  
+  
+}  
+  
+
+.section_pop h2 /* titre h2 */
+{
+
+margin-left: 0px;
+margin-top: 30px;
+margin-bottom: 30px;
+
+}
+
+.article_pop /* conteneur photo, descriptif et classement "populaire" */
+{
+  
+  width: 90%;
+  margin: 0px 0px 10px 0px;
+  
+}
+
+.block_act
+{
+margin-top: 0px;
+flex-direction: row; 
+
+}
+
+.article_act
+{ 
+  height: 190px;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 7px grey;
+}
+
+.Pomègues_Frioul, .Dame_Longchamps
+{
+    width: 70%;
+    flex-direction: row;
+    
+    
+}
+
+/* footer */
+
+footer {
+  
+  background-color: #f2f2f2;
+  margin-top: 30px;
+  
+}
+
+.container
+{
+  
+  flex-direction: row; 
+  font-size: 0.7em;
+  
+  
+}
+
+.colonne1, .colonne2, .colonne3 
+{
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 15px;
+}
+
+
+
+  
+
+  .article, .article_act, .article_pop, .block_act
+ {
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+ .article
+ {
+  width: 45%;
+ }
+ 
+ 
+ .article_pop
+  { 
+  width: 45%;
+  font-size: 0.8em;
+  }
+
+  .article_act /* conteneur photo et descriptif */
+  {
+      
+      width: 30%;
+      font-size: 0.8em;
+       
+      
+  }
+
+  .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
+{
+    height: 190px;
+    width : 45%;
+    margin-right: 0px;
+}
+  
+@media screen and (min-width: 940px) {
+  
+  footer
+  {
+    font-size: 1.2em;
+  }
+
+    .article_pop
+{ 
+    width: 30%;
+    font-size: 0.8em;
+}
+
+    .article /* conteneur photo, descriptif et classement "hebergement" */
+{
+  
+  width: 30%; 
+}
+
+.block_act
+{
+    width: 100%;
+    justify-content: center;
+}
+}
+  

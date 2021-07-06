@@ -1,0 +1,307 @@
+
+/* Pour les résolutions comprises entre 380px et 480px Smartphone) */
+
+body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* navigation smartphone */
+nav
+{
+    display: flex;
+    width: 100%;
+    margin-top: 10px; 
+    margin-right: 0px;
+}
+
+nav a
+{
+    display: flex;
+    justify-content: center;
+   
+}
+
+nav ul
+{
+display: flex;
+width: 100%;
+ margin: 0;
+ padding: 0;
+ 
+}
+
+nav li 
+{   
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+nav li:nth-child(2n), nav li:nth-child(3n) {
+    margin-right: 0px;
+}
+nav li:nth-child(3n)
+{
+    width: 0%;
+}
+
+/* supprimer la barre bleue du dessus (tag "hébergements") */
+hr
+{
+    display: none;
+}
+
+
+
+
+header [href="#inscription"]
+{   
+    display: inline;
+    font-size: 1.1em;
+    color: #0065FC;
+    text-decoration: none;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    font-weight: bold;
+    width: 20%;
+   
+}
+nav [href="#hebergements"]
+{
+     
+    color: #0065FC;
+    font-size: 1.1em;
+    border-bottom: 3px solid;
+    padding-bottom: 15px;
+    padding-top: 0px; 
+    width: 100%;
+    
+   
+}
+
+nav [href="#activites"]
+{
+    
+    font-size: 1.1em;
+    border-bottom: 3px solid;
+    padding-bottom: 15px;
+    color: #0a0a0a; 
+    border-color: #f2f2f2;
+    width: 100%;
+    
+ 
+    
+}
+
+header p
+{
+    margin-left: 15px;
+}
+
+.block_heb_pop
+{
+    
+    flex-direction: column-reverse;
+   
+}
+.section_heb, .section_pop, .block_act, .container
+{
+  
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.info
+{
+    margin-bottom: 35px ;
+    
+}
+
+
+
+
+.titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
+{
+    padding-left: 15px;
+     
+}
+
+.barre_recherche
+{
+    margin-top: 38px;
+}
+
+.map
+{
+    
+    border-radius: 15px 0 0 15px;
+}
+
+input[type="button"] {
+    min-width: 50px;
+    height: 50px;
+    font-size: 0px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.valide {
+    position: relative;
+    width: 50px;
+    border-radius: 15px;
+    margin-left: -5px;
+}
+
+.valide .fas {
+    display: inline; /* faire apparaitre l'icône de recherche */
+    position: absolute;
+    font-size: 100%;
+    color: white;
+    right: 17px;
+    top: 17px;
+}
+
+.titre_filtre {
+    
+    margin-top: 30px;
+    
+}
+
+
+.filtre {
+    
+    margin-top: 20px;
+    margin-left: 8px;
+    
+}
+
+.money, .child, .heart, .dog 
+{
+margin-bottom: 15px;
+margin-left: 10px;
+}
+
+
+
+
+
+
+.section_heb /* block hebergement */
+{   
+    
+    background-color: white;
+    margin-top: 0px;
+    margin-right: 0px;
+}  
+
+.section_heb h2, .afficher_plus /* titre h2 */
+{
+
+margin-left: 0px;
+
+}
+
+.article /* conteneur photo, descriptif et classement "hebergement" */
+{
+    
+    width: 90%;
+   
+    margin: 0px 0px 15px 0px;
+    
+}
+
+.cote
+{
+    width: 10%;
+}
+
+.section_pop
+ {
+    border-radius: 0px;
+    margin: 0px;
+    padding-bottom: 30px;
+    
+    
+ }  
+    
+
+.section_pop h2 /* titre h2 */
+{
+
+margin-left: 0px;
+margin-top: 30px;
+margin-bottom: 30px;
+
+}
+
+.article_pop /* conteneur photo, descriptif et classement "populaire" */
+{
+    
+    width: 90%;
+    margin: 0px 0px 10px 0px;
+    
+}
+
+.block_act
+{
+  margin-top: 0px;   
+}
+
+.article_act
+{   height: 190px;
+    width: 90%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 7px grey;
+}
+
+.article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"] 
+{
+    height: 190px;
+}
+.Pomègues_Frioul, .Dame_Longchamps
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 100%; 
+    
+}
+
+/* footer */
+
+footer {
+    
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    
+}
+
+
+
+
+.container
+ {
+    
+    flex-direction: column; 
+    
+    
+}
+
+.colonne1, .colonne2, .colonne3 
+{
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 15px;
+}
+

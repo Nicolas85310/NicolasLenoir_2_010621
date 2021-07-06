@@ -1,4 +1,6 @@
 
+/* Résolution desktop full HD,UHD, etc.... */
+
 /* Eléments principaux de la page */
 
 @font-face 
@@ -11,12 +13,25 @@
         font-weight: normal;
 }
 
-#bloc_page
-{  
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-top: 0px;
+}
+
+
+
+body
+
+{
     font-family: 'Raleway', Arial, sans-serif;
-    max-width: 1380px;
-    padding-left: 50px;
+}
+
+.bloc_page
+{   
     margin: auto;
+    max-width: 1440px;
+   
 }
 
 /* Header */
@@ -35,32 +50,70 @@ header
 
 /* Navigation */
 
+nav
+{   display: flex;
+    margin-right: 30px;
+    
+}
+
+
 nav ul
 {
     list-style-type: none;
     display: flex;
+    
+    
 }
 
 nav li
 {
-    margin-right: 30px;
+    margin-right: 10px;
+    margin-left: 40px;
 }
 
-nav a
+ /* coloration en bleu des liens */
+nav a 
 {
     font-size: 0.9em;
     color: #0065FC;
     text-decoration: none;
 }
 
-nav a:hover
+/* coloration en noir du tag "activités" */
+
+nav  [href="#activites"]
 {
-    color: #080808;
+    
+    color: #000000;   
 }
+
+/* barre bleue au dessus du tag "hébergements" */
+
+hr
+{
+width: 135px;
+margin-top: -17px;
+border: 1.5px solid #0065FC;
+}
+
+nav [href="#hebergements"]
+{  
+   display: flex;
+   padding-top: 8px;
+   justify-content: center; 
+   
+}
+
+nav li:nth-child(2n), nav li:nth-child(3n)
+{
+    margin-right: 30px;
+}
+
+
 
 /* Titres */
 
-#titre_principal
+.titre_principal
 {
     display: flex;
     flex-direction: column;
@@ -86,10 +139,10 @@ h2
 
 
 
-#barre_recherche
+.barre_recherche
 {
    display: flex;
-   max-width: 500px;
+   width: 100%;
    height: 50px;
    align-items: center;
     
@@ -120,8 +173,9 @@ h2
 
 .saisie
 {
-    display: flex;  
-}
+    display: flex;
+    width: 230px; 
+}   
 
 
 
@@ -129,7 +183,7 @@ input[type=text]
 {
    
     display: flex;
-    min-width: 234px;
+    width: 100%;
     height: 46px;
     padding-left: 15px;
     border-top: #f2f2f2 1px solid;
@@ -141,13 +195,14 @@ input[type=text]
 ::placeholder
 
 {
-    color: black;
+    color: #0a0a0a;
     font-weight: bold;
 }
 
 .valide
 {
-    display: flex;  
+    display: flex; 
+    min-width: 10%; 
 }
 
 .valide :hover
@@ -159,9 +214,10 @@ input[type=text]
 input[type=button] 
 {
     display: flex;
-    min-width: 134px;
+    width: 125px;
     height: 50px;
     border: none;
+    font-size: 1em;
     border-radius: 0 10px 10px 0;
     background-color: #0065FC;
     align-items: center;
@@ -170,29 +226,62 @@ input[type=button]
 
 }
 
+/* faire disparaitre l'icône de recherche */
+
+.valide .fas 
+{
+    display: none;  
+}
+
+
+
+/* faire apparaitre le tag "S'inscrire" en gras */
+header nav ul li [href="#inscription"]
+{
+    display: inline;
+    font-weight: bold;
+}
+
 /*Onglets filtre*/
 
 i 
 {
 color:  #0065FC;   
 }
+.block_filtre
+{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
 
-#filtre
+.titre_filtre {
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin-top: 50px;
+    width: 55px;
+
+} 
+
+.filtre
 {
-    margin-top: 30px;
+    
     display: flex;
     align-items: center;
     font-size: 1.1em;
     font-weight: bolder;
     flex-wrap: wrap;
     justify-content: left;
-     
+    margin-left: 70px;
+    margin-top: -35px; 
 }
 
-#filtre :hover /* animation des filtres lors du passage du curseur */
+.filtre :hover /* animation des filtres lors du passage du curseur */
 {
     background-color: #DEEBFF;  
-    
+    border-radius: 40px;
 } 
 
 
@@ -210,6 +299,8 @@ color:  #0065FC;
     border: #d9d9d9 2px solid;
     border-left: none;
     align-items: center;
+    
+    
      
 }
 
@@ -218,25 +309,7 @@ color:  #0065FC;
     padding: 10px;
   } 
 
-  .money
-  {
-     width: 195px;
-  }
   
-  .child
-  {
-     width: 150px;
-  }  
-
-  .heart
-  {
-     width: 180px;
-  }  
-
-  .dog
-  {
-     width: 240px;
-  }  
 
 
 
@@ -271,6 +344,7 @@ color:  #0065FC;
     margin-left: 10px;
     margin-top: auto;
     margin-bottom: auto;
+    width: 100%;
     
 }
 
@@ -299,10 +373,11 @@ color:  #0065FC;
 }   
 
 .section_heb /* block hebergement */
-{   margin: 40px 40px 0 0;
+{   
     display: flex;
-    width: 880px;
-    min-height: 625px;
+    margin-top: 40px;
+    width: 64.5%;
+    height: auto;
     border-radius: 20px;
     background-color: #f2f2f2;
     flex-wrap: wrap;
@@ -321,21 +396,13 @@ width: 100%;
 
 }
 
-.section_pop h2 /* titre h2 */
-{
-font-size: 1.4em;
-font-weight: bold;
-margin-left: 40px;
-margin-bottom: 5px;
-padding-top: 40px;
-width: 100%;
-}
+
 .article /* conteneur photo, descriptif et classement */
 {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 245px;
+    width: 28%;
     height: 200px;
     border-radius: 20px;
     margin: -10px 0px 40px 35px; 
@@ -403,19 +470,28 @@ span i /* afficher en gris les étoiles */
 {
 font-size: 1.2em;
 margin-left: 40px;
-width: 100%;
-
+padding-top: 0px;
 font-weight: bold;
 }
 
 .section_pop {
-    margin: 40px 40px 0 0;
+    
     display: flex;
-    width: 420px;
-    min-height: 625px;
+    margin: 40px 40px 0 0;
+    width: 30%;
+    height: auto;
     border-radius: 20px;
     background-color: #f2f2f2;
     flex-wrap: wrap;
+}
+
+.section_pop h2 /* titre h2 */
+{
+font-size: 1.4em;
+font-weight: bold;
+margin-left: 40px;
+margin-top: 40px;
+width: 100%;
 }
 
 .article_pop /* conteneur photo, descriptif et classement */
@@ -423,10 +499,10 @@ font-weight: bold;
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 340px;
+    width: 83%;
     height: 140px;
     border-radius: 20px;
-    margin: -10px 0px 40px 35px; 
+    margin: 0px 0px 40px 35px; 
     box-shadow: 0px 0px 10px grey; 
 }
 
@@ -446,6 +522,7 @@ font-weight: bold;
 {
  margin-left: 15px;
  margin-right: 25px;  
+ width: 80%;
 }
 
 
@@ -453,7 +530,7 @@ font-weight: bold;
 .photo_pop
 {
    display: flex;
-   max-width: 127px;
+   width: 50%;
    height: 130px;
    margin: 5px;
 }
@@ -562,36 +639,65 @@ img
 /* footer */
 
 footer {
+    
     background-color: #f2f2f2;
     margin-top: 55px;
 }
 
-.blockf {
-    max-width: 1380px;
-    margin: auto;
+.container {
+    max-width: 1440px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    margin: auto;
 }
 
-.blockf h2{
-    margin-left: 50px;
+.container h2{
+    
     font-size: 1.2em;
     font-weight: bold;
 }    
 
 .colonne1, .colonne2, .colonne3 
 {
-    width: 33%;
+    width: 100%;
     padding-top: 50px;
+    
 
 }
 
 footer ul
 {
     list-style-type: none;
-    padding-left: 50px;
+    padding-left: 0px;
     line-height: 2em;
     
 }
 
+
+/* Résolution desktop comprise entre 1200px et 1287px */
+@media screen and (min-width: 1201px) and (max-width: 1287px) {
+
+
+
+.article_pop {
+    font-size: 0.8em;
+}
+
+.cote i {
+    margin-left: 80px;
+}
+
+.Pomègues_Frioul, .Dame_Longchamps
+{
+    width: 23%;
+    font-size: 0.9em;
+ 
+}
+.article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
+{
+    
+    width : 100%;
+    margin-right: 0px;
+}
+
+}
