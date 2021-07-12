@@ -1,5 +1,5 @@
 
-/* Resolution comprise entre 700px et 1200px XL_tablette */
+/* Resolution comprise entre 700px et 1024px XL_tablette */
 
 body
 {
@@ -134,7 +134,7 @@ flex-direction: row;
   box-shadow: 0px 0px 7px grey;
 }
 
-.Pomègues_Frioul, .Dame_Longchamps
+.Pomegues_Frioul, .Dame_Longchamps
 {
     width: 70%;
     flex-direction: row;

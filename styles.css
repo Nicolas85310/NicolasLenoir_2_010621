@@ -1,5 +1,5 @@
 
-/* Résolution desktop full HD,UHD, etc.... */
+/* Résolution desktop 1024px et plus (full HD,UHD, etc....) */
 
 /* Eléments principaux de la page */
 
@@ -628,7 +628,7 @@ img
 
 /*Mise en colonne des petits articles*/
 
-.Pomègues_Frioul, .Dame_Longchamps
+.Pomegues_Frioul, .Dame_Longchamps
 {
     display: flex;
     flex-direction: column; 
@@ -673,10 +673,59 @@ footer ul
     
 }
 
+/* Résolution desktop comprise entre 1024px et 1200px */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+  
+    .article
+    {
+     width: 27%;
+     font-size: 0.7em;
+    }
 
-/* Résolution desktop comprise entre 1200px et 1287px */
-@media screen and (min-width: 1201px) and (max-width: 1287px) {
+    .article_pop 
+    {
+        font-size: 0.7em;
+        
+    }
+    
+    .cote i {
+        margin-left: 30px;
+    }
+    
+    .Pomegues_Frioul, .Dame_Longchamps
+    {
+        width: 22%;
+        
+    }
+    .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
+    {
+        
+        width : 100%;
+        margin-right: 0px;
+    }
+    .article_act
+    {
+        width: 22%;
+        font-size: 0.8em;
+    }
+    }
+    
 
+/* Résolution desktop comprise entre 1200px et 1400px (full HD) */
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 
 .article_pop {
@@ -687,10 +736,10 @@ footer ul
     margin-left: 80px;
 }
 
-.Pomègues_Frioul, .Dame_Longchamps
+.Pomegues_Frioul, .Dame_Longchamps
 {
-    width: 23%;
-    font-size: 0.9em;
+    width: 22%;
+    
  
 }
 .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
@@ -699,5 +748,11 @@ footer ul
     width : 100%;
     margin-right: 0px;
 }
+
+.article_act
+    {
+        width: 22%;
+        font-size: 0.8em;
+    }
 
 }
