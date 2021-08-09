@@ -13,26 +13,19 @@
         font-weight: normal;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    margin-top: 0px;
-}
-
-
-
-body
-
-{
+body {
     font-family: 'Raleway', Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0; 
 }
 
-.bloc_page
-{   
-    margin: auto;
+
+
+main{
+    width: 98%;
     max-width: 1440px;
-   
-}
+    margin: auto;
+    }
 
 /* Header */
 
@@ -41,6 +34,8 @@ header
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 98%;
+    max-width: 1440px;
 }
 
 
@@ -388,7 +383,7 @@ color:  #0065FC;
 {
 font-size: 1.4em;
 font-weight: bold;
-margin-left: 40px;
+margin-left: 35px;
 padding-bottom: 10px;
 padding-top: 40px;
 width: 100%;
@@ -443,6 +438,7 @@ width: 100%;
     border-radius: 15px 15px 0 0;   
 }
 
+
 a
 {
     font-size: 0.9em;
@@ -469,7 +465,7 @@ span i /* afficher en gris les étoiles */
 .afficher_plus /* afficher plus en gras */
 {
 font-size: 1.2em;
-margin-left: 40px;
+margin-left: 35px;
 padding-top: 0px;
 font-weight: bold;
 }
@@ -477,7 +473,7 @@ font-weight: bold;
 .section_pop {
     
     display: flex;
-    margin: 40px 40px 0 0;
+    margin: 40px 0 0 0;
     width: 30%;
     height: auto;
     border-radius: 20px;
@@ -489,28 +485,41 @@ font-weight: bold;
 {
 font-size: 1.4em;
 font-weight: bold;
-margin-left: 40px;
+margin-left: 35px;
 margin-top: 40px;
 width: 100%;
 }
 
+.section_heb { 
+    width: 66%;  
+}
+
+
 .article_pop /* conteneur photo, descriptif et classement */
 {
     display: flex;
-    flex-direction: column;
+    margin: 0;
     background-color: white;
-    width: 83%;
+    width: 88%;
     height: 140px;
     border-radius: 20px;
-    margin: 0px 0px 40px 35px; 
+    margin: 0px 0px 40px 20px; 
     box-shadow: 0px 0px 10px grey; 
+}
+
+.article_pop .star
+{
+ margin-left: 0px;
+ margin-bottom: 10px;
 }
 
 .descriptif_pop
 {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
    
-   margin-left: 140px;
-   margin-top: -150px;
 }
 
 .descriptif_pop .star i
@@ -518,19 +527,23 @@ width: 100%;
  margin-top: 25px;  
 }
 
-.descriptif_pop h4, .descriptif_pop p
+.descriptif_pop h4
 {
- margin-left: 15px;
- margin-right: 25px;  
- width: 80%;
-}
+    padding: 0;
+   
 
+}
+.descriptif_pop p
+{
+   margin-top: -20px; 
+    
+
+}
 
 
 .photo_pop
 {
    display: flex;
-   width: 50%;
    height: 130px;
    margin: 5px;
 }
@@ -551,7 +564,7 @@ width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 40px 40px 0 0;
+    margin: 40px 0 0 0;
     min-height: 445px;
     background-color: white;
     
@@ -575,7 +588,7 @@ width: 100%;
     flex-direction: column;
     background-color: white;
     margin-right: 43px;
-    width: 300px;
+    width: 310px;
     height: 445px;
     border-radius: 20px;
     margin: -5px 0px 0px 0px; 
@@ -584,13 +597,33 @@ width: 100%;
 }
 
 img
-{
+{   
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 20px 20px 0 0; 
-    overflow: hidden;  
+    border-radius: 20px 20px 0 0;
 }
+
+.article_act img{
+    object-position: center 0%;  
+  }
+  /* positionnement img Fort_de_Pomègues*/
+  .article_act [src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] { 
+    
+    object-position: center 40%;  
+  }
+  /* positionnement img Vieux_Port*/
+  .article_act [src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"] { 
+    
+    object-position: center 70%;  
+  }
+  /* positionnement img Parc_National_des_Calanques*/
+  .article_act [src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"] { 
+    
+    object-position: center top;  
+  }
+
+
 
 .titre_act 
 {   
@@ -632,7 +665,8 @@ img
 {
     display: flex;
     flex-direction: column; 
-    justify-content: space-between; 
+    justify-content: space-between;
+    
  
 }
 
@@ -642,6 +676,8 @@ footer {
     
     background-color: #f2f2f2;
     margin-top: 55px;
+    padding-left: 10px;
+    
 }
 
 .container {
@@ -649,6 +685,7 @@ footer {
     display: flex;
     justify-content: center;
     margin: auto;
+    
 }
 
 .container h2{
@@ -675,24 +712,43 @@ footer ul
 
 /* Résolution desktop comprise entre 1024px et 1200px */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-    body
-    {
-        width: 100%;
-        padding: 0;
-        margin: 0;
+
+
+    .section_pop {
+        margin-right: 0px;
+        width: 30%;  
     }
-  
+
+    .section_heb { 
+        width: 66%;  
+    }
+
+    .section_heb h2 { 
+        margin-left: 17px;  
+    }
+    
+    .afficher_plus {
+        
+        margin-left: 20px;
+        
+    }
     .article
     {
-     width: 27%;
-     font-size: 0.7em;
+     width: 30%;
+     font-size: 0.75em;
+     height: 180px;
+     margin-left: 17px;
     }
 
     .article_pop 
     {
-        font-size: 0.7em;
+        
+        width: 88%;
+        font-size: 0.75em;
         
     }
+
+}
     
     .cote i {
         margin-left: 30px;
@@ -703,34 +759,43 @@ footer ul
         width: 22%;
         
     }
-    .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
-    {
-        
-        width : 100%;
-        margin-right: 0px;
-    }
+    
     .article_act
     {
         width: 22%;
         font-size: 0.8em;
     }
-    }
     
+    
+      /* positionnement img Fort_de_Pomègues*/
+      .article_act [src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] { 
+        
+        object-position: center 40%;  
+      }
+      
+
+
+
+
+    .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
+{
+    
+    width : 100%;
+    margin-right: 0px;
+}
 
 /* Résolution desktop comprise entre 1200px et 1400px (full HD) */
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
 
-    body
-{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
+    .section_pop {
+        margin-right: 0px;
+        width: 30%;  
+    }
 
+    .section_heb { 
+        width: 66%;  
+    }
 
-.article_pop {
-    font-size: 0.8em;
-}
 
 .cote i {
     margin-left: 80px;
@@ -746,7 +811,7 @@ footer ul
 {
     
     width : 100%;
-    margin-right: 0px;
+    
 }
 
 .article_act
@@ -754,5 +819,16 @@ footer ul
         width: 22%;
         font-size: 0.8em;
     }
+    .article_act img{
+        object-position: center 5%;  
+      }
+    }
+      
+      
 
-}
+
+@media screen and (min-width: 1301px) and (max-width: 2400px) {
+    .article_act img{
+        object-position: center 20%;  
+      }
+    }

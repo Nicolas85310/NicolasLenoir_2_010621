@@ -53,7 +53,7 @@ nav [href="#hebergements"]
 
 .titre_principal, .barre_recherche, .titre_filtre, .info, .section_pop h2, .section_heb h2, .afficher_plus, .block_act h2
 {
-    padding-left: 15px;
+    padding-left: 22px;
      
 }
 
@@ -168,6 +168,15 @@ margin-top: 0px;
   box-shadow: 0px 0px 7px grey;
 }
 
+.article_act img{
+  object-position: center 25%;  
+}
+
+.article_act [src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] { 
+  
+  object-position: center 45%;  
+}
+
 .Pomegues_Frioul, .Dame_Longchamps
 {
     display: flex;
@@ -179,6 +188,7 @@ margin-top: 0px;
 .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
  {
      height: 190px;
+     width: 90%;
  }
 
 /* footer */
@@ -225,20 +235,6 @@ footer {
 }
 
  
-
-  .article, .article_act,.article_pop
- {
-    margin-left: auto;
-    margin-right: auto;
-
-  }
- .article
- {
-  width: 45%;
- }
- 
- 
-
   .article, .article_act,.article_pop
   {
      margin-left: auto;
@@ -271,11 +267,21 @@ footer {
      box-shadow: 0px 0px 7px grey;
      font-size: 0.8em;
  }
+
+ .article_act img{
+  object-position: center 20%;  
+}
+
+.article_act [src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] { 
+  
+  object-position: center 35%;  
+}
  
  .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
  {
      height: 190px;
      width : 45%;
+     margin-right: 15px;
  }
  .Pomegues_Frioul, .Dame_Longchamps
  {

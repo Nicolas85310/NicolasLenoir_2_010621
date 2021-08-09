@@ -224,7 +224,8 @@ footer {
 .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
 {
     height: 190px;
-    width : 45%;
+    width: 45%;
+    margin-right: 15px;
 }
 .Pomegues_Frioul, .Dame_Longchamps
 {

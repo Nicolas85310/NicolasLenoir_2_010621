@@ -2,11 +2,9 @@
 /* Pour les résolutions comprises entre 320px et 380px small_Smartphones) */
 
 
-body
-{
+main, header {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    margin: auto;
 }
 
 
@@ -275,9 +273,22 @@ font-size: 1.25em;
     box-shadow: 0px 0px 7px grey;
 }
 
-.article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"] 
+.article_act img{
+    object-position: center 10%;  
+}
+
+.article_act [src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] { 
+    
+    object-position: center 43%;  
+}
+
+
+
+.article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
 {
     height: 190px;
+    width: 90%;
+    
 }
 .Pomegues_Frioul, .Dame_Longchamps
 {

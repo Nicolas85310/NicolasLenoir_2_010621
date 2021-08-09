@@ -164,7 +164,7 @@ footer {
 {
   width: 100%;
   padding-top: 40px;
-  padding-left: 15px;
+  
 }
 
 
@@ -198,6 +198,15 @@ footer {
       
   }
 
+  .article_act img{
+    object-position: center 0%;  
+}
+
+.article_act [src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] { 
+    
+    object-position: center 40%;  
+}
+
   .article_act[href="#Fort_de_Pomègues"], .article_act[href="#Îles_du_Frioul"], .article_act[href="#Parc_Longchamp"], .article_act[href="#Notre_Dame_de_la_Garde"]
 {
     height: 190px;
@@ -206,6 +215,16 @@ footer {
 }
   
 @media screen and (min-width: 940px) {
+
+
+  .article_act img{
+    object-position: center 0%;  
+}
+
+.article_act [src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] { 
+    
+    object-position: center 40%;  
+}
   
   footer
   {
